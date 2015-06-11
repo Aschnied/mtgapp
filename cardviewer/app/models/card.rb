@@ -1,9 +1,13 @@
 class Card < ActiveRecord::Base
   def change
-    create table :cards do |c|
+    create_table :cards do |t|
       t.integer :multiverseid
       t.string :name
-      t.
+      t.string :rarity
+      t.string :set
 
+      t.timestamps :null
+
+    end
   end
 end
