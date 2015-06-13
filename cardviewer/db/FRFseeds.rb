@@ -1,3 +1,5 @@
+require 'json'
+
 file = File.read('db/FRF.json')
 
 database_hash = JSON.parse(file)
@@ -9,6 +11,6 @@ database_hash.each do |card|
     name: card["name"],
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
-    set: "ktk"
+    set: "frf"
     )
 end
