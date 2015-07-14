@@ -11,7 +11,8 @@ database_hash.each do |card|
     name: card["name"],
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
-    set: "ktk"
+    set: "ktk",
+    image: "http://api.mtgdb.info/content/card_images/" + "card['multiverseid']" + ".jpeg"
     )
 end
 
@@ -26,7 +27,8 @@ database_hash.each do |card|
     name: card["name"],
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
-    set: "frf"
+    set: "frf",
+    image: "http://api.mtgdb.info/content/card_images/" + "card['multiverseid']" + ".jpeg"
     )
 end
 
@@ -42,6 +44,6 @@ database_hash.each do |card|
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
     set: "dtk",
-    image: "http://api.mtgdb.info/content/card_images/" + card["multiverseid"] + ".jpeg"
+    image: "http://api.mtgdb.info/content/card_images/" + "card['multiverseid']" + ".jpeg"
    )
 end
