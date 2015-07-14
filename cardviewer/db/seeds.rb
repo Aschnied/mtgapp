@@ -41,6 +41,7 @@ database_hash.each do |card|
     name: card["name"],
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
-    set: "dtk"
-    )
+    set: "dtk",
+    image: "http://api.mtgdb.info/content/card_images/" + card["multiverseid"] + ".jpeg"
+   )
 end

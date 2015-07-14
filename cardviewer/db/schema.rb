@@ -14,10 +14,11 @@
 ActiveRecord::Schema.define(version: 20150606015933) do
 
   create_table "cards", force: :cascade do |t|
-    t.integer  "multiverseid"
+    t.string   "multiverseid"
     t.string   "name"
     t.string   "rarity"
     t.string   "set"
+    t.string   "image"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
