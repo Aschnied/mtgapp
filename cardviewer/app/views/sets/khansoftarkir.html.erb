@@ -7,6 +7,9 @@
 </div>
 
 <div class="image-container">
+  <%= Card.all.each do |card|
+    <a href="<% card.image %>" id="<% card.multiverseid %>"></a> %>
+  <% end %>
 </div>
 
 <!-- Modules -->
