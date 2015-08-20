@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :sets
-  resources :cards
+  # resources :sets
+  # resources :cards
 
   get 'welcome/index'
 
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get 'welcome/sets/khansoftarkir'
+  get 'sets' => 'sets#setlist'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
