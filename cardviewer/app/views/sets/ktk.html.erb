@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body ng-app="cardApp">
+<div class="header">
+  <h1>Khans of Tarkir</h1>
+</div>
+
+<div class="image-container">
+  <%= Card.all.each do |card|
+    <a href="<% card.image %>" id="<% card.multiverseid %>"></a> %>
+  <% end %>
+</div>
+
+<!-- Modules -->
+    <script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/HomeController.js"></script>
+
+
+
+
+</body>
+</html>

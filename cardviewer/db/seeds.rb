@@ -13,7 +13,7 @@ database_hash.each do |card|
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
     set: "ktk",
-    image: "http://api.mtgdb.info/content/card_images/" + "#{multiverseid}" + ".jpeg"
+    image: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + "#{multiverseid}" + "&type=card"
     )
 end
 
@@ -30,7 +30,7 @@ database_hash.each do |card|
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
     set: "frf",
-    image: "http://api.mtgdb.info/content/card_images/" + "#{multiverseid}" + ".jpeg"
+    image: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + "#{multiverseid}" + "&type=card"
     )
 end
 
@@ -47,6 +47,6 @@ database_hash.each do |card|
     multiverseid: card["multiverseid"],
     rarity: card["rarity"],
     set: "dtk",
-    image: "http://api.mtgdb.info/content/card_images/" + "#{multiverseid}" + ".jpeg"
+    image: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + "#{multiverseid}" + "&type=card"
    )
 end
