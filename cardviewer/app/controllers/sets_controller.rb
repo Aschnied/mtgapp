@@ -1,4 +1,4 @@
 class SetsController < ApplicationController
-  def setlist
+  def sets
   end
 end

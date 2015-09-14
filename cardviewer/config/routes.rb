@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
 
-  # resources :sets
-  # resources :cards
 
   get 'welcome/index'
 
-  get 'welcome/khansoftarkir'
+  get 'welcome/sets/ktk'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
