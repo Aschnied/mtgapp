@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150606015933) do
+ActiveRecord::Schema.define(version: 20151103225530) do
 
   create_table "cards", force: :cascade do |t|
     t.string   "multiverseid"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 20150606015933) do
     t.string   "image"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "expansion_id"
+  end
+
+  create_table "expansions", force: :cascade do |t|
+    t.string   "release"
+    t.string   "img"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
   end
 
 end

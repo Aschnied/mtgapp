@@ -9,5 +9,9 @@
   <h1>The Library of Lat-Nam</h1>
 
   <h2>List of M:tG sets</h2>
-  <a href="ktk.html.erb">Khans of Tarkir</a>
+
+  <% @expansions.each do |expansion| %>
+    <%= link_to expansion_path(expansion.id) %>
+  <% end %>
+
 </body>
